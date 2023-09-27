@@ -15,7 +15,7 @@ The input parameters of the system are the frequency, ω, and amplitude, F, of t
 
 **Part 1: Solution of ODE**
 
-![](Aspose.Words.ceafbbe9-8cd0-4389-ade5-f57a62e78878.001.png)
+![](Fig/Fig1.ceafbbe9-8cd0-4389-ade5-f57a62e78878.001.png)
 
 By inserting the values of the given terms, the following differential equation is obtained:
 
