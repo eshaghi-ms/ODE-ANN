@@ -1,15 +1,20 @@
 ﻿**Exercise ‘VAC-2021-42 - PhD Position in CIMNE MARINE’**
 
 The goal of the exercise is to develop a neural network capable of predicting the maximum restoring load of the non-linear mass-spring-damper system shown in the figure:
-
+\begin{center}
 ![](Figuers/1.png)
+\end{center}
+
 
 The system responds to the following differential equation:
 
+\begin{center}
 $M \frac{d^2x}{dt^2} + D \frac{dx}{dt} + K \cdot x = Fe$
+\end{center}
 
 Where $x$ is the displacement of the mass (in metres), $M$ is the Mass of the system, $D$ is damping coefficient, $K$ the restoring term and Fe the excitation force. The values of those terms are given below:
 
+\begin{center}
 $M=1 kg$
 
 $D=0.05 kg·s$
@@ -17,6 +22,7 @@ $D=0.05 kg·s$
 $K(x)=1+0.1x N/m$
 
 $Fe=F·sin(ωt)  N$
+\end{center}
 
 
 The input parameters of the system are the frequency, ω, and amplitude, F, of the excitation force. The output of the system is the maximum restoring load. The range of applicability must be: F∈[0.1,10]  N and w∈[0.1,10]  rad/s
