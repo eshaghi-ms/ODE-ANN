@@ -12,7 +12,7 @@ The system responds to the following differential equation:
   $M \frac{d^2x}{dt^2} + D \frac{dx}{dt} + K \cdot x = F_e$
 </p>
 
-Where $x$ is the displacement of the mass (in metres), $M$ is the Mass of the system, $D$ is damping coefficient, $K$ the restoring term and Fe the excitation force. The values of those terms are given below:
+Where $x$ is the displacement of the mass (in metres), $M$ is the Mass of the system, $D$ is damping coefficient, $K$ the restoring term and $Fe$ the excitation force. The values of those terms are given below:
 
 <p align="center">
   $M=1 \quad kg$
@@ -24,12 +24,12 @@ Where $x$ is the displacement of the mass (in metres), $M$ is the Mass of the sy
   $K(x)=1+0.1x \quad N/m$
 </p>
 <p align="center">
-  $Fe=F·sin(ωt)  \quad N$
+  $F_e = F·sin(ωt)  \quad N$
 </p>
 
 
 
-The input parameters of the system are the frequency, ω, and amplitude, F, of the excitation force. The output of the system is the maximum restoring load. The range of applicability must be: F∈[0.1,10]  N and w∈[0.1,10]  rad/s
+The input parameters of the system are the frequency, $ω$, and amplitude, $F$, of the excitation force. The output of the system is the maximum restoring load. The range of applicability must be: $F∈[0.1,10]$  $N$ and $w∈[0.1,10]  rad/s$
 
 
 **Part 1: Solution of ODE**
