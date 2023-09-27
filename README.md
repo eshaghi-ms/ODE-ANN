@@ -15,7 +15,7 @@ The input parameters of the system are the frequency, ω, and amplitude, F, of t
 
 **Part 1: Solution of ODE**
 
-![](Fig/Fig1.ceafbbe9-8cd0-4389-ade5-f57a62e78878.001.png)
+![](Figuers/1.png)
 
 By inserting the values of the given terms, the following differential equation is obtained:
 
@@ -29,15 +29,15 @@ This equation is a second-order nonlinear ordinary differential equation and the
 
 The equation has been solved numerically by MATLAB software and related codes are presented in appendix. The behavior of the system, for some value of ω is unstable, due to resonance phenomenon. For example, the behavior of the system over time is shown for a stable state (<a name="ole_link1"></a>F=5 and ω=5) in Figure 1 and for an unstable state (F=0.8 and ω=0.81) in Figure 2.
 
-(a)![G:\Apply 2021\Countries\Spain\-4-VAC-2021-42\Fig\FIG1-a.jpg](Aspose.Words.ceafbbe9-8cd0-4389-ade5-f57a62e78878.002.jpeg)
+(a)![G:\Apply 2021\Countries\Spain\-4-VAC-2021-42\Fig\FIG1-a.jpg](Figuers/2.jpg)
 
-(b)![G:\Apply 2021\Countries\Spain\-4-VAC-2021-42\Fig\FIG1-b.jpg](Aspose.Words.ceafbbe9-8cd0-4389-ade5-f57a62e78878.003.jpeg)
+(b)![G:\Apply 2021\Countries\Spain\-4-VAC-2021-42\Fig\FIG1-b.jpg](Figuers/3.jpg)
 
 **Fig. 1** the stable behavior of non-linear mass-spring-damper system (F=5 & ω=5): (a) displacement of mass (meters), as a function of the time (second); (b) velocity of mass, dx/dt, (m/s), as a function of its displacement.
 
-(a)![](Aspose.Words.ceafbbe9-8cd0-4389-ade5-f57a62e78878.004.jpeg)
+(a)![](Figuers/4.jpg)
 
-(b)![](Aspose.Words.ceafbbe9-8cd0-4389-ade5-f57a62e78878.005.jpeg)
+(b)![](Figuers/5.jpg)
 
 **Fig. 1** the unstable behavior of non-linear mass-spring-damper system (F=0.8 & ω=0.81): (a) displacement of mass (meters), as a function of the time (second); (b) velocity of mass, dx/dt, (m/s), as a function of its displacement.
 
@@ -50,11 +50,11 @@ After obtaining the displacement values of mass, the values of restoring load of
 
 As the data have to be handled through Machine Learning approaches, the quality of the dataset is one of the dominant aspects to assure the accuracy of the predictions. The database should contain a sufficient number of different input values, and more data is needed at values where system behavior is more sensitive. Therefore, an appropriate understanding of the system behavior must be found. For this purpose, how the maximum restoring load (Rmax) changes in terms the <a name="ole_link2"></a>frequency (ω) and amplitude (F) of the excitation force, are plotted in Figures 3 and 4, respectively.
 
-![](Aspose.Words.ceafbbe9-8cd0-4389-ade5-f57a62e78878.006.jpeg)
+![](Figuers/6.jpg)
 
 **Fig. 3** Maximum restoring load (Rmax , N), as a function of frequency (ω , rads) for different values of excitation force amplitude (F , N)
 
-![](Aspose.Words.ceafbbe9-8cd0-4389-ade5-f57a62e78878.007.jpeg)
+![](Figuers/7.jpg)
 
 **Fig. 4** Maximum restoring load (Rmax , N), as a function of excitation force amplitude (F , N) for different values of frequency (ω , rads) 
 
@@ -91,7 +91,7 @@ which has been assumed as the loss function to be minimized during the training.
 
 To assess the effects of the hyperparameters on the ANN accuracy, the plot in Figure 5 shows the final value of RMSE as a function of the total number of neurons in the MLP. The continuous line represents the solution obtained with the one-hidden-layer ANN, which is obviously uniquely defined by the number of neurons in the layer itself; the dashed lines represent instead the solutions for the two-hidden-layer ANNs, and for each of them the label in the chart represents the number of neurons in its second hidden layer. Each point in this graph has been computed as the average value out of ten repetitions of the training process, to also assure robustness against stochastic effects. What turns out from this analysis is that the ANN featuring one-hidden-layer only, almost surely provides the best performance. Furthermore, for a number of neurons larger than 20 there is no noticeable improvement in the final value of the RMSE. Accordingly and in order to minimize the computational costs, the 2-20-1 ANN architecture has been adopted henceforth. However for comparison in the rest of the steps, 2-15-5-1 and 2-5-15-1 two-hidden-layer neural networks are also selected.
 
-![](Aspose.Words.ceafbbe9-8cd0-4389-ade5-f57a62e78878.008.jpeg)
+![](Figuers/8.jpg)
 
 **Fig. 5** MLP: dependence of the RMSE at the end of training on the total number of neurons in the ANN, featuring either one or two hidden layers.
 
@@ -119,17 +119,17 @@ The goodness of fit of the results has been also studied: Figure 7 provides a co
 |8-5-15-1 MLP|0\.9164|0\.4828|0\.3007|-1.4182e-04|
 |8-15-5-1 MLP |0\.9542|0\.3405|0\.2141|-9.5641e-04|
 
-![](Aspose.Words.ceafbbe9-8cd0-4389-ade5-f57a62e78878.009.jpeg)
+![](Figuers/9.jpg)
 
 **Fig. 6** Performances of the ML algorithms: parity plots showing the ML output against the corresponding truth numerical values for: (a) all the MLP methods and regarding all the data; (b) 2-20-1-MLP regarding test and validation data; (c) 2-5-15-1-MLP regarding test and validation data; (d) 2-15-5-1-MLP regarding test and validation data.
 
-(a)![D:\Apply 2021\Countries\Spain\-4-VAC-2021-42\Fig\FIG7-1.jpg](Aspose.Words.ceafbbe9-8cd0-4389-ade5-f57a62e78878.010.jpeg)
+(a)![D:\Apply 2021\Countries\Spain\-4-VAC-2021-42\Fig\FIG7-1.jpg](Figuers/10.jpg)
 
-(b)![](Aspose.Words.ceafbbe9-8cd0-4389-ade5-f57a62e78878.011.jpeg)
+(b)![](Figuers/11.jpg)
 
-(c)![](Aspose.Words.ceafbbe9-8cd0-4389-ade5-f57a62e78878.012.jpeg)
+(c)![](Figuers/12.jpg)
 
-(d)![](Aspose.Words.ceafbbe9-8cd0-4389-ade5-f57a62e78878.013.jpeg)
+(d)![](Figuers/13.jpg)
 
 **Fig. 7** Performance of the MLP algorithms: comparison between the true numerical results and the forecasts provided by the three MLP for some data, in terms of the maximum restoring load of the non-linear mass-spring-damper system.
 
