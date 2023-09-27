@@ -3,7 +3,9 @@
 The goal of the exercise is to develop a neural network capable of predicting the maximum restoring load of the non-linear mass-spring-damper system shown in the figure:
  
 The system responds to the following differential equation:
-M (d^2 x)/(dt^2 )+D dx/dt+K·x=Fe
+$$
+M \frac{d^2x}{dt^2} + D \frac{dx}{dt} + K \cdot x = Fe
+$$
 Where x is the displacement of the mass (in metres), M is the Mass of the system, D is damping coefficient, K the restoring term and Fe the excitation force. The values of those terms are given below:
 M=1 kg
 D=0.05 kg·s
