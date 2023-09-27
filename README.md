@@ -12,7 +12,7 @@ The system responds to the following differential equation:
   $M \frac{d^2x}{dt^2} + D \frac{dx}{dt} + K \cdot x = F_e$
 </p>
 
-Where $x$ is the displacement of the mass (in metres), $M$ is the Mass of the system, $D$ is damping coefficient, $K$ the restoring term and $Fe$ the excitation force. The values of those terms are given below:
+Where $x$ is the displacement of the mass (in metres), $M$ is the Mass of the system, $D$ is damping coefficient, $K$ the restoring term and $F_e$ the excitation force. The values of those terms are given below:
 
 <p align="center">
   $M=1 \quad kg$
@@ -28,8 +28,7 @@ Where $x$ is the displacement of the mass (in metres), $M$ is the Mass of the sy
 </p>
 
 
-
-The input parameters of the system are the frequency, $ω$, and amplitude, $F$, of the excitation force. The output of the system is the maximum restoring load. The range of applicability must be: $F∈[0.1,10]$  $N$ and $w∈[0.1,10]  rad/s$
+The input parameters of the system are the frequency, $ω$, and amplitude, $F$, of the excitation force. The output of the system is the maximum restoring load. The range of applicability must be: $F∈[0.1,10]$  $N$ and $w∈[0.1,10]$  $rad/s$
 
 
 **Part 1: Solution of ODE**
@@ -38,12 +37,12 @@ The input parameters of the system are the frequency, $ω$, and amplitude, $F$, 
 
 By inserting the values of the given terms, the following differential equation is obtained:
 
-|d2xdt2+0.05 dxdt+(1+0.1x)·x=F·sinωt|(1)|
+|$ d2xdt2+0.05 dxdt+(1+0.1x)·x=F·sinωt $|(1)|
 | - | - |
 
 This equation is a second-order nonlinear ordinary differential equation and the following initial values are assumed for it:
 
-|x0=0,	x'(0)=0|(2)|
+|$x0=0,	x'(0)=0$|(2)|
 | :-: | - |
 
 The equation has been solved numerically by MATLAB software and related codes are presented in appendix. The behavior of the system, for some value of ω is unstable, due to resonance phenomenon. For example, the behavior of the system over time is shown for a stable state (<a name="ole_link1"></a>F=5 and ω=5) in Figure 1 and for an unstable state (F=0.8 and ω=0.81) in Figure 2.
