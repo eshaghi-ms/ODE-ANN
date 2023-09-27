@@ -5,16 +5,18 @@ The goal of the exercise is to develop a neural network capable of predicting th
 ![](Figuers/1.png)
 
 The system responds to the following differential equation:
+
 $M \frac{d^2x}{dt^2} + D \frac{dx}{dt} + K \cdot x = Fe$
-Where x is the displacement of the mass (in metres), M is the Mass of the system, D is damping coefficient, K the restoring term and Fe the excitation force. The values of those terms are given below:
 
-M=1 kg
+Where $x$ is the displacement of the mass (in metres), $M$ is the Mass of the system, $D$ is damping coefficient, $K$ the restoring term and Fe the excitation force. The values of those terms are given below:
 
-D=0.05 kg·s
+$M=1 kg$
 
-K(x)=1+0.1x N/m
+$D=0.05 kg·s$
 
-Fe=F·sin(ωt)  N
+$K(x)=1+0.1x N/m$
+
+$Fe=F·sin(ωt)  N$
 
 
 The input parameters of the system are the frequency, ω, and amplitude, F, of the excitation force. The output of the system is the maximum restoring load. The range of applicability must be: F∈[0.1,10]  N and w∈[0.1,10]  rad/s
