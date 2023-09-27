@@ -3,7 +3,7 @@
 The goal of the exercise is to develop a neural network capable of predicting the maximum restoring load of the non-linear mass-spring-damper system shown in the figure:
 
 <p align="center">
-  <![](Figuers/1.png)>
+  <img width="200" ![](Figuers/1.png)>
 </p>
 
 The system responds to the following differential equation:
@@ -15,12 +15,15 @@ The system responds to the following differential equation:
 Where $x$ is the displacement of the mass (in metres), $M$ is the Mass of the system, $D$ is damping coefficient, $K$ the restoring term and Fe the excitation force. The values of those terms are given below:
 
 <p align="center">
-  <$M=1 kg$
-
+  $M=1 kg$
+</p>
+<p align="center">
   $D=0.05 kg·s$
-
+</p>
+<p align="center">
   $K(x)=1+0.1x N/m$
-
+</p>
+<p align="center">
   $Fe=F·sin(ωt)  N$>
 </p>
 
