@@ -24,7 +24,7 @@ Where $x$ is the displacement of the mass (in metres), $M$ is the Mass of the sy
   $K(x)=1+0.1x \quad N/m$
 </p>
 <p align="center">
-  $Fe=F·sin(ωt)  \quad N$>
+  $Fe=F·sin(ωt)  \quad N$
 </p>
 
 
