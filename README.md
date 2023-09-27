@@ -112,18 +112,19 @@ $$SI = \frac{RMSE}{\overline{R_{m, D}}}\quad\quad\quad\quad (6)$$
 
 $$BIAS = \frac{1}{n} \sum_{i=1}^{n} (R_{m_i, D} - R_{m_i, ANN}) \quad\quad\quad\quad(7)$$
 
-$R^2$, $SI$, and $BIAS$ being, respectively, the coefficient of determination, the scatter index, and the standard bias. Besides these indices, the RMSE introduced in Eq. (4) has been adopted too. In these equations: $i=1,…,n$ is an index running over the instances in the dataset; $R_{m_i , D}$ is the numerical value of the maximum restoring load furnished by the MATLAB software, while $R_{m_i ,  ANN}  is the corresponding value provided by the trained ML tool; the overbar stands for the average value of the corresponding variable.
+$R^2$, $SI$, and $BIAS$ being, respectively, the coefficient of determination, the scatter index, and the standard bias. Besides these indices, the RMSE introduced in Eq. ($4$) has been adopted too. In these equations: $i=1,…,n$ is an index running over the instances in the dataset; $R_{m_i , D}$ is the numerical value of the maximum restoring load furnished by the MATLAB software, while $R_{m_i ,  ANN}$  is the corresponding value provided by the trained ML tool; the overbar stands for the average value of the corresponding variable.
 
-Table 2 gathers the values of all the statistical indices introduced above to assess the performance of each MLP neural networks. It can be seen that 8-20-1-MLP is more accurate than 8-15-5-1-MLP and 8-5-15-1-MLP in catching the response, as shown by the $R^2$, $RMSE$, $SI$, and $BIAS$ values. The same trend is shown also in the parity plots given in Figure 6, where the estimations of the maximum restoring load of the non-linear mass-spring-damper system are compared with the truth values. Output provided by 8-20-1-MLP is shown to be much less scattered than the others, and the linear interpolation of all the pairs of results is well aligned with the (perfect fit) bisector of the quadrant. In spite of the relative small value of the BIAS, due to the fact that each single term in the sum is purposely taken with its own sign, 8-5-15-1-MLP is the model performing worse, as reported by the large scatter and also by the deviation from the perfect fit line of the linear interpolant.
+Table $2$ gathers the values of all the statistical indices introduced above to assess the performance of each MLP neural networks. It can be seen that $8-20-1-MLP$ is more accurate than $8-15-5-1-MLP$ and $8-5-15-1-MLP$ in catching the response, as shown by the $R^2$, $RMSE$, $SI$, and $BIAS$ values. The same trend is shown also in the parity plots given in Figure $6$, where the estimations of the maximum restoring load of the non-linear mass-spring-damper system are compared with the truth values. Output provided by $8-20-1-MLP$ is shown to be much less scattered than the others, and the linear interpolation of all the pairs of results is well aligned with the (perfect fit) bisector of the quadrant. In spite of the relative small value of the BIAS, due to the fact that each single term in the sum is purposely taken with its own sign, $8-5-15-1-MLP$ is the model performing worse, as reported by the large scatter and also by the deviation from the perfect fit line of the linear interpolant.
 
-The goodness of fit of the results has been also studied: Figure 7 provides a comparison between the true valued and the foreseen maximum restoring load of the non-linear mass-spring-damper system. For this comparison, only few number of the instances in the dataset has been selected, so as to provide a clear view of the quality of data fitting. It results that the maximum restoring load computed by the ML techniques matches relatively well their true counterparts; the (minor) scattering around them is obviously in accordance with the results reported in Figure 7.
+The goodness of fit of the results has been also studied: Figure $7$ provides a comparison between the true valued and the foreseen maximum restoring load of the non-linear mass-spring-damper system. For this comparison, only few number of the instances in the dataset has been selected, so as to provide a clear view of the quality of data fitting. It results that the maximum restoring load computed by the ML techniques matches relatively well their true counterparts; the (minor) scattering around them is obviously in accordance with the results reported in Figure $7$.
 
-|**Table 2.**  Performance of the MLP algorithms, in term of the adopted statistical indices|||||
-| - | :- | :- | :- | :- |
+**Table 2.**  Performance of the MLP algorithms, in term of the adopted statistical indices
+
 |ANN|R2|RMSE|SI|BIAS|
-|2-20-1 MLP|0\.9731|0\.2928|0\.1825|2\.4505e-04|
-|8-5-15-1 MLP|0\.9164|0\.4828|0\.3007|-1.4182e-04|
-|8-15-5-1 MLP |0\.9542|0\.3405|0\.2141|-9.5641e-04|
+| - | :- | :- | :- | :- |
+|$2-20-1 MLP$|$0\.9731$|$0\.2928$|$0\.1825$|$2.4505 \times 10^{-4}$|
+|$8-5-15-1 MLP$|$0\.9164$|$0\.4828$|$0\.3007$|$-1.4182 \times 10^{-4}$|
+|$8-15-5-1 MLP$ |$0\.9542$|$0\.3405$|$0\.2141$|$-9.5641 \times 10^{-4}$|
 
 ![](Figuers/9.jpg)
 
