@@ -9,7 +9,7 @@ The goal of the exercise is to develop a neural network capable of predicting th
 The system responds to the following differential equation:
 
 <p align="center">
-  <$M \frac{d^2x}{dt^2} + D \frac{dx}{dt} + K \cdot x = Fe$>
+  $M \frac{d^2x}{dt^2} + D \frac{dx}{dt} + K \cdot x = Fe$
 </p>
 
 Where $x$ is the displacement of the mass (in metres), $M$ is the Mass of the system, $D$ is damping coefficient, $K$ the restoring term and Fe the excitation force. The values of those terms are given below:
